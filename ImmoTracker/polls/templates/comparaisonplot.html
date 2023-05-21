@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="section">
+        <div class="container has-text-centered">
+            <h1 class="title">Our Plots</h1>
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    {{ValeurFonciere20192022|safe}}
+                    <p class="has-text-centered">Vue d'ensemble des valeurs foncieres entre 2019 et 2022</p>
+                </div>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    {{SommeValueurFonciere20192022|safe}}
+                    <p class="has-text-centered">Somme journaliere des valeur foncieres</p>
+                </div>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    {{Totalvaleurfonciereparregion|safe}}
+                    <p class="has-text-centered">Total valeur fonciere par region</p>
+                </div>
+            </div>
+            
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    {{DispersionValeursFoncieresDepartementM2|safe}}
+                    <p class="has-text-centered">Dispersion des valeurs foncieres moyenne de departement par rapport au m2</p>
+                </div>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    {{DifferencePrixM220192022|safe}}
+                    <p class="has-text-centered">Difference des prix m2 entre 2019 et 2022</p>
+                </div>
+            </div>           
+        </div>
+    </section>
+{% endblock %}

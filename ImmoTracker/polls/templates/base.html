@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'css/bulma.min.css' %}" rel="stylesheet">
+    <title>Page de la Figure</title>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+
+                <img src="{% static 'Images/logo.jpg' %}" alt="Logo du site">
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="{% url 'home' %}">Home</a>
+                <a class="navbar-item" href="{% url 'plot' %}">2022 Plot</a>
+                <a class="navbar-item" href="{% url 'comparaisonplot' %}">2019vs2022 Plot</a>
+                <a class="navbar-item" href="{% url 'about' %}">About us</a>
+            </div>
+        </div>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+
+</html>

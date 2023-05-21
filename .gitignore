@@ -7,7 +7,9 @@ __pycache__/
 
 # C extensions
 *.so
-
+#The data files
+Data/
+.vs/
 # Distribution / packaging
 .Python
 env/

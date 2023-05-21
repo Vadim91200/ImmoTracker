@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+<section class="section">
+    <div class="container">
+        <h1 class="title">À propos de nous</h1>
+        <div class="columns">
+            <div class="column is-4">
+                <div class="level">
+                    <div class="level-item">
+                        <figure class="image is-128x128">
+                            <img class="is-rounded" src="{% static 'Images/RadovanovicStefan.jpg' %}" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <h5 class="title is-5 has-text-centered">Stefan Radovanovic</h5>
+                <p class="subtitle is-6 has-text-centered">CEO</p>
+                <div class="has-text-centered">
+                    <a href="https://www.linkedin.com/in/stefan-rdvic/" target="_blank">
+                        <figure class="image is-32x32 is-inline-block">
+                            <img src="{% static 'Images/LinkedIn_logo.png' %}" alt="Logo LinkedIn">
+                        </figure>
+                    </a>
+                </div>
+                <p class="has-text-centered">When I'm not obsessively stressing ...</p>
+            </div>
+            <div class="column is-4">
+                <div class="level">
+                    <div class="level-item">
+                        <figure class="image is-128x128">
+                            <img class="is-rounded" src="{% static 'Images/LiYannick.jpg' %}" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <h5 class="title is-5 has-text-centered">Yannick Li</h5>
+                <p class="subtitle is-6 has-text-centered">CTO</p>
+                <div class="has-text-centered">
+                    <a href="https://www.linkedin.com/in/yannick-li/" target="_blank">
+                        <figure class="image is-32x32 is-inline-block">
+                            <img src="{% static 'Images/LinkedIn_logo.png' %}" alt="Logo LinkedIn">
+                        </figure>
+                    </a>
+                </div>
+                <p class="has-text-centered">When I'm not obsessively stressing ...</p>
+            </div>
+            <div class="column is-4">
+                <div class="level">
+                    <div class="level-item">
+                        <figure class="image is-128x128">
+                            <img class="is-rounded" src="{% static 'Images/GoichotCharlesAndre.jpg' %}" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <h5 class="title is-5 has-text-centered">Charles-André Goichot</h5>
+                <p class="subtitle is-6 has-text-centered">CFO</p>
+                <div class="has-text-centered">
+                    <a href="https://www.linkedin.com/in/charles-andré-goichot/" target="_blank">
+                        <figure class="image is-32x32 is-inline-block">
+                            <img src="{% static 'Images/LinkedIn_logo.png' %}" alt="Logo LinkedIn">
+                        </figure>
+                    </a>
+                </div>
+                <p class="has-text-centered">When I'm not obsessively stressing ...</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

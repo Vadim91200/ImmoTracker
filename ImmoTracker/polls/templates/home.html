@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+    <!-- Section principale -->
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Bienvenue sur notre projet d'analyse de données DVF</h1>
+
+            <div class="content">
+                <p>
+                    Notre projet vise à analyser les demandes de valeurs foncières (DVF) en France.
+                    Nous nous intéressons notamment à l'évolution des prix de l'immobilier au fil du temps.
+                </p>
+                <figure class="image is-16by9">
+                    <img src="{% static 'Images/HomePageIllustration.jpg' %}" alt="Image illustrative du projet">
+                </figure>
+            </div>
+
+            <div class="content">
+                <p>
+                    Nous utilisons des données OpenData disponibles sur le site data.gouv.fr.
+                    Ces données comprennent des informations sur les transactions immobilières intervenues au cours des
+                    cinq dernières années sur le territoire métropolitain et les DOM-TOM, à l'exception de l'Alsace, de
+                    la Moselle et de Mayotte.
+                </p>
+            </div>
+
+            <div class="content">
+                <p>
+                    Sur ce site, vous pourrez explorer différentes visualisations de ces données,
+                    y compris les prix moyens au mètre carré par département et par ville, ainsi que la comparaison
+                    entre différents types de biens (appartements, maisons, etc.).
+                </p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
